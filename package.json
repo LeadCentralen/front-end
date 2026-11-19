@@ -1,0 +1,16 @@
+{
+  "name": "leadcentralen",
+  "version": "1.0.0",
+  "description": "Leadcentralen – sök svenska företag och följ upp kontakter på en leadtavla. Utvecklat av IT Hjälparna Nordic AB.",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.9" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning server/server.js",
+    "dev": "node --watch --env-file-if-exists=.env --disable-warning=ExperimentalWarning server/server.js",
+    "seed": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning server/scripts/seed.js",
+    "import": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning server/scripts/import.js",
+    "scb-codes": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning server/scripts/scb-codes.js",
+    "scb-sync":"node --env-file-if-exists=.env --disable-warning=ExperimentalWarning server/scripts/scb-sync.js"
+  }
+}

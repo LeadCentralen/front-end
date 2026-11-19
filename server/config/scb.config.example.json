@@ -1,0 +1,12 @@
+{
+  "_info": "EXPERIMENTELL mall för `npm run scb-sync`. Fyll i värdena från SCB:s OpenAPI-specifikation (https://apiafr.scb.se/scalar/) och spara som server/config/scb.config.json. API-nyckeln läggs i miljövariabeln SCB_API_KEY, aldrig i filen.",
+  "url": "https://apiafr.scb.se/ … (endpoint som listar företag, se specifikationen)",
+  "method": "GET",
+  "keyHeader": "(headerns namn enligt specifikationen)",
+  "query": {},
+  "body": null,
+  "pagination": { "type": "page", "in": "query", "pageParam": "page", "sizeParam": "pageSize", "size": 5000, "firstPage": 1 },
+  "itemsPath": "",
+  "maxPages": 1000,
+  "callsPerSecond": 4
+}

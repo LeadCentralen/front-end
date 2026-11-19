@@ -1,0 +1,21 @@
+node_modules/
+
+# Hemligheter - ska aldrig pushas (.env.example är mallen och får följa med)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Databas och data
+data/*.db*
+*.db
+*.db-wal
+*.db-shm
+
+# SCB-uppgifter
+server/config/scb.config.json
+
+# Övrigt
+*.log
+.DS_Store
